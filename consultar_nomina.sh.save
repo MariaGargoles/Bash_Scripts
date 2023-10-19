@@ -1,0 +1,27 @@
+#!/bin/bash
+#Asigno a la variable usuario  el valor que se introduce desde el teclado:
+#hacemos un existe para que nos muestre la ruta yfiltremos por la palabra que deseamos EN ESTE CASO QUEREMOS EL USUARIO
+#dentro del THEN  hacemos que nos ejecute la nomina de cada uno de los usuarios y  ponemos la ruta donde se encuentra y filtramos la palabra que queremos que nos aparezca
+
+clear 
+echo consultar nomina de un usuario
+echo
+read -p "introduzca el nombre del usuario:  " usuario
+existe_usuario=`cat /etc/passwd |grep -w $usuario |wc -l`
+if [ $existe_usuario -eq 1 ] 
+then 
+
+	nombre_nomina=`echo "$usuario"_nomina.txt`
+	existe_nomina=`ls -l /home/rrhh/nominas |grep -w $nombre_nomina |wc -l`
+
+	if [ $existe_nomina -eq 1 ];
+        then
+                echo nomina de $usuario 
+                cat /home/rrhh/nominas/$nombre_nomina
+        else
+                echo la nomina del usuario $usuario no existe.
+		echo consultar con rrhh 
+	fi
+else
+	echo el usuario $usuario no existe en el sistema
+fi

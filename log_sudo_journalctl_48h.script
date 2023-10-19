@@ -1,0 +1,6 @@
+#!/bin/bash
+
+	sudo journalctl -S -2d |grep sudo |grep -v session > /home/auditoria/log_sudo_journalctl_48h.txt
+
+
+

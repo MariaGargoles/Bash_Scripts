@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for usuario in `members empleados`
+do
+
+	echo Buscando en $usuario
+	sudo cat /home/$usuario/.bash_history|grep nomina| tail -10
+	echo 
+done
+

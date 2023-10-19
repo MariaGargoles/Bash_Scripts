@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for usuario in `members empleados`
+do
+
+	echo Buscando en $usuario
+	sudo rm /home/$usuario/documentacion/"$usuario"_contrato.txt
+	sudo rm /home/$usuario/documentacion/"$usuario"_nomina.txt
+	echo 
+done
+

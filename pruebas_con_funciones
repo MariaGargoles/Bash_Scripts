@@ -1,0 +1,8 @@
+#!/bin/bash
+
+function _saludo
+{
+echo Hola $USER
+}
+
+_saludo

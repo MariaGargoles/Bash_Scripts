@@ -1,0 +1,32 @@
+#!/bin/bash
+ls -l /home/| grep seginf_director|grep 4096 |awk '{print $9}'|grep -v seginf_director > directorios_seginf_director.tmp
+
+for usuario in  `members empleados`
+do
+	echo procesando $usuario
+
+#	sudo chmod 750 /home/$usuario
+	sudo chmod 700 /home/$usuario
+#	sudo setfacl -m "g:rrhh:--x" /home/$usuario
+
+	grupo=`groups $usuario |awk '{print $3}'`
+#	sudo setfacl -m "g:$grupo:---" /home/$usuario
+
+done
+
+
+for carpeta in `cat directorios_seginf_director.tmp`
+do
+	sudo chmod 770 /home/$carpeta
+done
+
+sudo chmod 750 /home/rrhh
+
+rm directorios_seginf_director.tmp
+
+echo finalizado
+
+
+
+
+
