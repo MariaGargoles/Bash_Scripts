@@ -10,7 +10,7 @@ do
        printf echo procesando $i
        echo " sudo chown -R $i:$grupo /home/$i "
 
-# quitar el prinf y el echo del principio para poder ejecutar el script primero
+# quitar el print y el echo del principio para poder ejecutar el script primero
 done
 echo " ------------------------------------- "
 echo Este script esta comentado porque cambiaria el grupo propietario sin tener en cuenta

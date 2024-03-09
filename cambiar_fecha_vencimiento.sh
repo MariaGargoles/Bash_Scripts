@@ -1,4 +1,4 @@
-#este scripy es creado para poder se llamdo desde "cambiar_contrato.sh", mediante u menú interactivo.
+#este script es creado para poder se llamdo desde "cambiar_contrato.sh", mediante u menú interactivo.
 
 #introducimos la variable para que sea ejecudo sobre el usuario que ha sido nombrado desde el otro script.
 username=`echo $1`

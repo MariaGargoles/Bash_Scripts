@@ -24,7 +24,7 @@ then
 #	        echo "2) temporal"
 #		echo "0) cancelar"
 		 case "${option}" in
-			#utilizamos la vriable "opcion" para que, en este bucle se realizcen las siquientes
+			#utilizamos la variable "opcion" para que, en este bucle se realizcen las siquientes
 			#operaciones según la opción escogida:
 			#1) cambia el contrato con la opción escogida
 			#2) cambia la fecha de vencimiento del contrato

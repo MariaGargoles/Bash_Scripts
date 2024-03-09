@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#se ha creado un scrip que tenga dos formas de ejecutarlo, una de forma manual 
+#se ha creado un script que tenga dos formas de ejecutarlo, una de forma manual 
 #y otra de forma interactiva
 
 

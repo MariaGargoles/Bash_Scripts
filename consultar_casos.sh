@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Previamente creamos los menú sinteractivos para poder introducirlos son tener que copiar
+#Previamente creamos los menús interactivos para poder introducirlos son tener que copiar
 #lo mismo todo el tiempo en el desarrollo del script.
 
 function _menu_consultar_casos
